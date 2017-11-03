@@ -28,4 +28,8 @@ public class Shop {
     public void addProduct(Sellable product) {
         this.product.add(product);
     }
+
+    public void removeProduct(Piano piano) {
+        this.product.remove(0);
+    }
 }

@@ -37,4 +37,12 @@ public class ShopTest {
         shop.addProduct(piano);
         assertEquals(1, shop.getProduct().size());
     }
+
+    @Test
+    public void canRemoveProduct() {
+        shop.addProduct(piano);
+        assertEquals(1, shop.getProduct().size());
+        shop.removeProduct(piano);
+        assertEquals(0, shop.getProduct().size());
+    }
 }
