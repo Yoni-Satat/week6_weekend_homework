@@ -10,5 +10,10 @@ public abstract class Instruments extends Product {
 
     public Instruments(int sellPrice, int buyPrice, String family) {
         super(sellPrice, buyPrice);
+        this.family = family;
+    }
+
+    public String getFamily() {
+        return family;
     }
 }

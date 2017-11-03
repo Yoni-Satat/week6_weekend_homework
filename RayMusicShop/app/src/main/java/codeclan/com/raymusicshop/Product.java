@@ -12,4 +12,12 @@ public abstract class Product {
         this.sellPrice = sellPrice;
         this.buyPrice = buyPrice;
     }
+
+    public int getSellPrice() {
+        return sellPrice;
+    }
+
+    public int getBuyPrice() {
+        return buyPrice;
+    }
 }
