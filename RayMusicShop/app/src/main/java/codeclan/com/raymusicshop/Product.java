@@ -4,7 +4,7 @@ package codeclan.com.raymusicshop;
  * Created by user on 03/11/2017.
  */
 
-public abstract class Product {
+public abstract class Product implements Sellable {
     private int sellPrice;
     private int buyPrice;
 
@@ -19,5 +19,9 @@ public abstract class Product {
 
     public int getBuyPrice() {
         return buyPrice;
+    }
+
+    public int calculateMarkUp() {
+        return sellPrice - buyPrice;
     }
 }
