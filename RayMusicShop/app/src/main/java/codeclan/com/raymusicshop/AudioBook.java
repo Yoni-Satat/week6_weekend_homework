@@ -16,4 +16,8 @@ public class AudioBook extends Product {
     public String getBookName() {
         return bookName;
     }
+
+    public String play() {
+        return "Playing audio book";
+    }
 }

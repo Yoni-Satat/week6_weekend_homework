@@ -30,4 +30,9 @@ public class PianoTest {
     public void canGetFamily() {
         assertEquals("Wooding", piano.getFamily());
     }
+
+    @Test
+    public void canPlay() {
+        assertEquals("Playing piano", piano.play());
+    }
 }

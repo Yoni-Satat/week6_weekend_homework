@@ -31,4 +31,9 @@ public class AudioBookTest {
     public void canGetBookName() {
         assertEquals("Learn Piano with Luigiano", audiobook.getBookName());
     }
+
+    @Test
+    public void canPlay() {
+        assertEquals("Playing audio book", audiobook.play());
+    }
 }

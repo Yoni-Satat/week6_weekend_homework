@@ -8,4 +8,8 @@ public class Piano extends Instrument {
     public Piano(int sellPrice, int buyPrice, String family) {
         super(sellPrice, buyPrice, family);
     }
+
+    public String play() {
+        return "Playing piano";
+    }
 }
