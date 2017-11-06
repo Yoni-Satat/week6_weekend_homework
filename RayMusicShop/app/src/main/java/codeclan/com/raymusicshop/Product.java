@@ -5,8 +5,8 @@ package codeclan.com.raymusicshop;
  */
 
 public abstract class Product implements Sellable {
-    private int sellPrice;
-    private int buyPrice;
+    protected int sellPrice;
+    protected int buyPrice;
 
     public Product(int sellPrice, int buyPrice) {
         this.sellPrice = sellPrice;
@@ -24,4 +24,6 @@ public abstract class Product implements Sellable {
     public int calculateMarkUp() {
         return sellPrice - buyPrice;
     }
+
+
 }

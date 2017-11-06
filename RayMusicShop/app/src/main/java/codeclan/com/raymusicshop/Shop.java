@@ -1,5 +1,4 @@
 package codeclan.com.raymusicshop;
-
 import java.util.ArrayList;
 
 /**
@@ -31,5 +30,19 @@ public class Shop {
 
     public void removeProduct(Piano piano) {
         this.product.remove(0);
+    }
+
+    public int calculateMarkUp() {
+        return 0;
+    }
+
+
+
+    public int getStockMarkUp() {
+        int total = 0;
+        for(Sellable item : product) {
+            total += item.calculateMarkUp();
+        }
+        return total;
     }
 }

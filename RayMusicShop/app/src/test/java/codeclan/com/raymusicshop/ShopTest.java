@@ -15,11 +15,13 @@ public class ShopTest {
 
     Shop shop;
     Piano piano;
+    Part part;
 
     @Before
     public void before() {
         shop = new Shop("Ray's Music Shop");
         piano = new Piano(20, 10, "Wooding");
+        part = new Part(10, 5, "Music Sheet");
     }
 
     @Test
@@ -44,5 +46,12 @@ public class ShopTest {
         assertEquals(1, shop.getProduct().size());
         shop.removeProduct(piano);
         assertEquals(0, shop.getProduct().size());
+    }
+
+    @Test
+    public void canGetStockMarkUp() {
+        shop.addProduct(part);
+        shop.addProduct(piano);
+        assertEquals(15, shop.getStockMarkUp());
     }
 }
